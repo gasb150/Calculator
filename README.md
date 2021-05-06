@@ -2,6 +2,11 @@
 
 This project is focused to implement a calculator app. You could use additon, substraction, multiplication, divition. All the results will be displayed.
 
+## :computer: Built With
+- Node.js v10.19.0
+- React v17.0.2
+- ES6
+- npm v6.14.4
 
 ## Live Demo
 
