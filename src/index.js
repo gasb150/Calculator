@@ -1,13 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// class App extends React.component {
-
-//   render() {
-//     return <div>'lll</div>
-//   }
-// }
-
 const App = () => (
   <div>
     <h1>Calculator App</h1>
