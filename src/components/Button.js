@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const { buttonName, type } = props;
-
+  let color = 'teal';
+  if (type === 'sp') {
+    color = 'purple';
+  } if (type === 'op') {
+    color = 'blue';
+  }
   return (
-    <div className={type}>{buttonName}</div>
+    <div className={`ui button ${color}`}>{buttonName}</div>
   );
 };
 
