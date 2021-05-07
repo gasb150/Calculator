@@ -11,9 +11,19 @@ const calculate = (data, buttonName) => {
     operation=null;
   }
   if (buttonName === "%"){
-    total= total/100
-    next = next/100
+    if (!total)  total/100
+    else next/100
+  }
+  if (buttonName === "="){
+    if(!total && !next) return 0;
+    if(total && !next) return 0;
+    if(!operation) operate(total, next, operation)
+    if(total && next){
+      operate(total, next, operation);
+      next= null;
+      operation = buttonName
+    }
   }
 }
 
-exppor default calculate;
+export default calculate;
