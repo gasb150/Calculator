@@ -66,7 +66,7 @@ const calculate = (data, buttonName) => {
   if (buttonName === "=") {
     if (!total && !next) return 0;
     if (total && !next) return 0;
-    if (!operation) operate(total, next, operation)
+    if (!operation) Operate(total, next, operation)
     if (total && next) {
       Operate(total, next, operation);
       next = null;
