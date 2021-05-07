@@ -6,8 +6,8 @@ const ButtonPanel = () => (
   <>
     <div className="d-grid">
       <Button buttonName="AC" type="sp" />
-      <Button buttonName="+/-" type="op" />
-      <Button buttonName="%" type="op" />
+      <Button buttonName="+/-" type="sp" />
+      <Button buttonName="%" type="sp" />
       <Button buttonName="/" type="op" />
     </div>
     <div className="d-grid">
@@ -30,7 +30,7 @@ const ButtonPanel = () => (
     </div>
     <div className="d-grid-last">
       <Button buttonName="0" type="num" />
-      <Button buttonName="." type="sp" />
+      <Button buttonName="." type="num" />
       <Button buttonName="=" type="op" />
 
     </div>

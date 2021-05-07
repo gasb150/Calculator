@@ -1,5 +1,10 @@
+#root {
+  background-color: black;
+}
+
 .display-value {
-  border: red 5px solid;
+  border: transparent 5px solid;
+  color: white;
   text-align: end;
 }
 
@@ -8,19 +13,26 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.sp,
+.op,
+.num {
+  border: 1px black solid;
+  text-align: center;
+}
+
 .d-grid-last {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 .num {
-  background-color: orange;
+  background-color: rgb(236, 232, 222);
 }
 
 .op {
-  background-color: greenyellow;
+  background-color: rgb(68, 47, 255);
 }
 
 .sp {
-  background-color: rgb(226, 208, 45);
+  background-color: rgb(139, 139, 136);
 }
