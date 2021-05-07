@@ -1,0 +1,22 @@
+.display-value{
+  border: red 5px solid;
+  text-align: end;
+}
+.d-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.d-grid-last{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.num{
+  background-color: orange;
+}
+.op{
+  background-color: greenyellow;
+}
+.sp{
+  background-color: rgb(226, 208, 45);
+}
