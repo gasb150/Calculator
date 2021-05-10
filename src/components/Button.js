@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const { buttonName, type } = props;
-  let color = 'teal';
+  let color = 'orange';
   if (type === 'sp') {
     color = 'purple';
   } if (type === 'op') {
