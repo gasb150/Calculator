@@ -10,6 +10,7 @@
 
 .d-grid {
   display: grid;
+  margin: 5px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -22,6 +23,7 @@
 
 .d-grid-last {
   display: grid;
+  margin: 5px;
   grid-template-columns: 2fr 1fr 1fr;
 }
 
