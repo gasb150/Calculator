@@ -16,11 +16,10 @@ const App = () => {
     const result = calculate(data, buttonName);
     setData({ ...result });
   };
-
-  const result = '0';
+  const { next, total } = data;
   return (
     <div className="ui content">
-      <Display result={result} />
+      <Display result={(next && next.toString()) || (total && total.toString())} />
       <ButtonPanel clickHandler={(e) => handleClick(e)} />
 
     </div>
