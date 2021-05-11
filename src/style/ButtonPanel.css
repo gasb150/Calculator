@@ -29,7 +29,7 @@
   margin: 5px;
   grid-template-columns: 2fr 1fr 1fr;
 }
-.ui.content{
+.ui.container .column{
   /* width: 50%; */
   background-color: black;
 }
