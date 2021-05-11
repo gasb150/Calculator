@@ -23,7 +23,7 @@ const App = () => {
         <Display result={(next && next.toString()) || (total && total.toString())} />
         <ButtonPanel clickHandler={(e) => handleClick(e)} />
       </div>
-      <footer className="container center aligned segment inverted ui grey header">
+      <footer className="footer container center aligned inverted ui header segment">
         { 'Created by ' }
         <a href="https://gasb150.me" className="ui header teal">
           Gustavo Sanmartin
