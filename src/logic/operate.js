@@ -5,7 +5,7 @@ const operate = (numberOne, numberTwo, operation) => {
   const num2 = Big(numberTwo);
 
   if (operation === '/') {
-    return num2 !== '0' ? num1.div(num2) : 'No divisin by zero';
+    return numberTwo !== '0' ? num1.div(num2) : 'No divisin by zero';
   } if (operation === 'X') {
     return num1.times(num2);
   } if (operation === '+') {
