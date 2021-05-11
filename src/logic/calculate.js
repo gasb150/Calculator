@@ -34,7 +34,6 @@ const operationButton = (data, buttonName) => {
   }
   if (buttonName === '.') {
     if (!total) {
-      console.log('jjj');
       total = '0.';
     }
     if (total && operation) {
