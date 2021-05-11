@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
-  const { buttonName, type } = props;
+const Button = ({ buttonName, handlerClick, type }) => {
+  const handleClick = () => handlerClick(buttonName);
   let color = 'orange';
   if (type === 'sp') {
     color = 'purple';
@@ -10,12 +10,13 @@ const Button = (props) => {
     color = 'blue';
   }
   return (
-    <div className={`ui button ${color}`}>{buttonName}</div>
+    <button type="button" className={`ui button ${color}`} onClick={handleClick}>{buttonName}</button>
   );
 };
 
 Button.propTypes = {
   buttonName: PropTypes.string,
+  handlerClick: PropTypes.func.isRequired,
   type: PropTypes.string,
 };
 
