@@ -19,12 +19,16 @@ const App = () => {
   const { next, total } = data;
   return (
     <div className="ui grid container">
-      {/* <div className="content"> */}
       <div className="sixteen wide mobile eight wide tablet ten wide computer column">
         <Display result={(next && next.toString()) || (total && total.toString())} />
         <ButtonPanel clickHandler={(e) => handleClick(e)} />
       </div>
-      {/* </div> */}
+      <footer className="container center aligned segment inverted ui grey header">
+        { 'Created by ' }
+        <a href="https://gasb150.me" className="ui header teal">
+          Gustavo Sanmartin
+        </a>
+      </footer>
     </div>
   );
 };

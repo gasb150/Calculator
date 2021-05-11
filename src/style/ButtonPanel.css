@@ -1,8 +1,11 @@
+body{
+  background-color: black;
+}
 #root {
   background:url(https://www.rd.com/wp-content/uploads/2018/02/math-problem-1024x683.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 98vh;
 }
 
 .display-value {
@@ -16,6 +19,13 @@
   margin: 5px;
   grid-template-columns: repeat(4, 1fr);
 }
+
+/* footer{
+  color: white;
+}
+footer span {
+  color: orange
+} */
 
 .sp,
 .op,
