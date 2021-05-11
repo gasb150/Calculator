@@ -1,16 +1,30 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+/* eslint-disable no-unused-vars, react/no-unused-state */
+
+import React, { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
-import Calculator from '../logic/calculate';
+import calculate from '../logic/calculate';
 
-const result = '0';
-const App = () => (
-  <div className="ui content">
-    <Display result={result} />
-    <ButtonPanel />
+const App = () => {
+  const [data, setData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  </div>
-);
+  const handleClick = (buttonName) => {
+    const result = calculate(data, buttonName);
+    setData({ ...result });
+  };
+
+  const result = '0';
+  return (
+    <div className="ui content">
+      <Display result={result} />
+      <ButtonPanel clickHandler={(e) => handleClick(e)} />
+
+    </div>
+  );
+};
 
 export default App;
