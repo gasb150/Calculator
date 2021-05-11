@@ -33,7 +33,10 @@ const operationButton = (data, buttonName) => {
     }
   }
   if (buttonName === '.') {
-    if (!total) return '0.';
+    if (!total) {
+      console.log('jjj');
+      total = '0.';
+    }
     if (total && operation) {
       total += '.';
     }
@@ -41,12 +44,12 @@ const operationButton = (data, buttonName) => {
       next += '.';
     }
     if (total && operation && !next) {
-      next += '0.';
+      next = '0.';
     }
   }
 
   if (['+', 'X', '/', '-'].includes(buttonName)) {
-    if (!total) total = 0;
+    if (!total) total = '0';
     if (total && !next) {
       operation = buttonName;
     }
