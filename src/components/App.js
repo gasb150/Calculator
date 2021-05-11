@@ -18,10 +18,13 @@ const App = () => {
   };
   const { next, total } = data;
   return (
-    <div className="ui content">
-      <Display result={(next && next.toString()) || (total && total.toString())} />
-      <ButtonPanel clickHandler={(e) => handleClick(e)} />
-
+    <div className="ui grid container">
+      {/* <div className="content"> */}
+      <div className="sixteen wide mobile eight wide tablet ten wide computer column">
+        <Display result={(next && next.toString()) || (total && total.toString())} />
+        <ButtonPanel clickHandler={(e) => handleClick(e)} />
+      </div>
+      {/* </div> */}
     </div>
   );
 };

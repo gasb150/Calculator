@@ -1,5 +1,8 @@
 #root {
-  background-color: black;
+  background:url(https://www.rd.com/wp-content/uploads/2018/02/math-problem-1024x683.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .display-value {
@@ -25,6 +28,10 @@
   display: grid;
   margin: 5px;
   grid-template-columns: 2fr 1fr 1fr;
+}
+.ui.content{
+  /* width: 50%; */
+  background-color: black;
 }
 
 .num {

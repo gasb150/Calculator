@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ buttonName, handlerClick, type }) => {
   const handleClick = () => handlerClick(buttonName);
-  let color = 'orange';
+  let color = 'teal';
   if (type === 'sp') {
     color = 'purple';
   } if (type === 'op') {
