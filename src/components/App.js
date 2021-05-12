@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
@@ -10,16 +11,18 @@ const App = () => {
     operation: null,
   });
   const handleClick = (buttonName) => {
-    const result = calculate(value, buttonName);
+    const data = { ...value };
+    const result = calculate(data, buttonName);
+    console.log(result);
     setValue({ ...result });
   };
-  const { next, total } = value;
+  const { total, next } = value;
 
   return (
     <div className="main-calculator">
       <div className="section-calculator">
         <Display result={(next && next.toString()) || (total && total.toString())} />
-        <ButtonPanel clickHandler={(e) => handleClick(e)} />
+        <ButtonPanel clickHandler={(data) => handleClick(data)} />
       </div>
       <div className="heloo">
         <div>
