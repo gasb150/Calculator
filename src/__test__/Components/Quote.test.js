@@ -5,8 +5,9 @@ import Quote from '../../components/Quote';
 
 it('Should renders correctly', ()=>{
   const elem = create(<Quote />).toJSON();
-  expect(elem).toMatchSnapshot;
+  expect(elem).toMatchSnapshot();
 });
+
 it('Should display header information', ()=>{
   render(<Quote />)
   const elem = screen.getByText('–William Paul Thurston')
