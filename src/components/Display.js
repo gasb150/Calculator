@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const Display = (props) => {
   const { result } = props;
   return (
-    <h1 className="display-value">
-      {result}
+    <h1 className="ui orange header display-value">
+      {result || '0'}
     </h1>
   );
 };

@@ -1,5 +1,13 @@
+body {
+  background: url(https://www.rd.com/wp-content/uploads/2018/02/math-problem-1024x683.jpg);
+  background-color: rgb(168, 164, 164);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #root {
-  background-color: black;
+  padding: 5%;
+  box-sizing: border-box;
 }
 
 .display-value {
@@ -14,11 +22,10 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.sp,
-.op,
-.num {
-  border: 1px black solid;
-  text-align: center;
+.ui.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .d-grid-last {
@@ -27,14 +34,6 @@
   grid-template-columns: 2fr 1fr 1fr;
 }
 
-.num {
-  background-color: rgb(236, 232, 222);
-}
-
-.op {
-  background-color: rgb(68, 47, 255);
-}
-
-.sp {
-  background-color: rgb(139, 139, 136);
+.ui.container .column {
+  background-color: black;
 }
