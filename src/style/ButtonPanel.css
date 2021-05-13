@@ -1,12 +1,25 @@
-/* body {
+ body {
   background: url(https://www.rd.com/wp-content/uploads/2018/02/math-problem-1024x683.jpg);
+  opacity: 1;
   background-color: rgb(168, 164, 164);
   background-repeat: no-repeat;
   background-size: cover;
-} */
-
+  color: white;
+}
+h2{
+  font-size: 50px;
+}
+h3{
+  font-size: 80px;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+}
+a{
+  color: white;
+}
 #root {
-  padding: 5%;
   box-sizing: border-box;
 }
 
@@ -23,21 +36,30 @@
   grid-template-columns: repeat(4, 1fr);
 }
 .head{
+  background-color: black;
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  margin-bottom: 2%;
 }
 
 .navBar{
   display: flex;
-  margin-bottom: 50px;
 }
 .navBar a{
   padding-right: 5px;
   padding-left: 5px;
+  font-size:25px;
 }
 .navBar a:not(:last-child){
-  border-right: 1px solid black;
+  border-right: 1px solid white;
 
+}
+.quote{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
 }
 
 .d-grid-last {
@@ -46,8 +68,11 @@
   margin: 5px;
   grid-template-columns: 2fr 1fr 1fr;
 }
-
+.pageContainer{
+  padding: 0 5%;
+}
 .main-calculator{
+
   display: flex;
   flex-direction: row-reverse;
 }

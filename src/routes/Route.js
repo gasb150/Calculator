@@ -20,7 +20,7 @@ const Routes = () => (
       </nav>
     </header>
     <Switch>
-      <div>
+      <div className="pageContainer">
         <Route exact path="/" component={Home} />
         <Route exact path="/calculator" component={App} />
         <Route exact path="/quote" component={Quote} />
