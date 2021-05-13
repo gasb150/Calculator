@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
@@ -37,6 +36,5 @@ const App = () => {
     </div>
   );
 };
-// }
 
 export default App;

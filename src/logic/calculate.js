@@ -75,5 +75,4 @@ const calculate = (data, buttonName) => {
   }
   return { total, next, operation };
 };
-// const calculate = (data, buttonName) => operationButton(data, buttonName);
 export default calculate;
