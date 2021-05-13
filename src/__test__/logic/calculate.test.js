@@ -14,11 +14,11 @@ describe('Calculate methods', () => {
     const result = Calculate(firstObject, 9);
     expect(typeof result).toEqual('object');
   });
-  it('Should total be a number', () =>{
+  it('Should total be a number', () => {
     const result = Calculate(secondObject, 9);
-    const value = (result.total * 1)
-    expect (typeof value).toEqual('number')
-  })
+    const value = (result.total * 1);
+    expect(typeof value).toEqual('number');
+  });
   it('Should return null object', () => {
     const result = Calculate(firstObject, 'AC');
     expect(result).toStrictEqual({ next: null, operation: null, total: null });
@@ -62,7 +62,7 @@ describe('Calculate methods', () => {
   it('Should not be a number divid by zero', () => {
     const result = Calculate({ total: '6', next: '0', operation: '/' }, '=');
     expect(result.total * 1).toEqual(NaN);
-    expect(typeof result.total).not.toEqual('number')
+    expect(typeof result.total).not.toEqual('number');
     expect(result.next).toEqual(null);
     expect(result.operation).toEqual('=');
   });
