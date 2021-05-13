@@ -12,16 +12,20 @@ describe('Calculate operations', () => {
     const result = Operate('2', '4', '+');
     expect(result * 1).toBe(6);
   });
-  it('Should s a negative value', () => {
-    const result = Operate(2, 4, '-');
+  it('Should sustrate two numbers value', () => {
+    const result = Operate('2', '4', '-');
     expect(result * 1).toEqual(-2);
   });
   it('Should return a divided value', () => {
-    const result = Operate(2, 4, '/');
+    const result = Operate('2', '4', '/');
     expect(result * 1).toEqual(0.5);
   });
+  it('Should return a divided value', () => {
+    const result = Operate('2', '0', '/');
+    expect(result).toEqual('No divisin by zero');
+  });
   it('Should return a multipliyed value', () => {
-    const result = Operate(2, 4, 'X');
+    const result = Operate('2', '4', 'X');
     expect(result * 1).toEqual(8);
   });
 });
