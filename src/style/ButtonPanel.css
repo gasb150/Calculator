@@ -1,4 +1,4 @@
- body {
+body {
   background: url(https://www.rd.com/wp-content/uploads/2018/02/math-problem-1024x683.jpg);
   opacity: 1;
   background-color: rgb(168, 164, 164);
@@ -6,19 +6,24 @@
   background-size: cover;
   color: white;
 }
-h2{
+
+h2 {
   font-size: 50px;
 }
-h3{
+
+h3 {
   font-size: 80px;
 }
-p{
+
+p {
   font-size: 20px;
   font-weight: bold;
 }
-a{
+
+a {
   color: white;
 }
+
 #root {
   box-sizing: border-box;
 }
@@ -35,7 +40,8 @@ a{
   margin: 5px;
   grid-template-columns: repeat(4, 1fr);
 }
-.head{
+
+.head {
   background-color: black;
   display: flex;
   align-items: center;
@@ -43,19 +49,21 @@ a{
   margin-bottom: 2%;
 }
 
-.navBar{
+.navBar {
   display: flex;
 }
-.navBar a{
+
+.navBar a {
   padding-right: 5px;
   padding-left: 5px;
-  font-size:25px;
+  font-size: 25px;
 }
-.navBar a:not(:last-child){
-  border-right: 1px solid white;
 
+.navBar a:not(:last-child) {
+  border-right: 1px solid white;
 }
-.quote{
+
+.quote {
   display: flex;
   align-items: center;
   text-align: center;
@@ -68,26 +76,32 @@ a{
   margin: 5px;
   grid-template-columns: 2fr 1fr 1fr;
 }
-.pageContainer{
+
+.pageContainer {
   padding: 0 5%;
 }
-.main-calculator{
 
+.main-calculator {
   display: flex;
   flex-direction: row-reverse;
 }
-.section-calculator{
+
+.section-calculator {
   margin-left: 50px;
   width: 700px;
 }
+
 @media screen and (max-width: 790px) {
-  .section-calculator{
+  .section-calculator {
     width: 100%;
   }
-  .d-grid, .d-grid-last{
+
+  .d-grid,
+  .d-grid-last {
     height: 10rem;
   }
-  .main-calculator{
+
+  .main-calculator {
     flex-direction: column;
-}
+  }
 }
