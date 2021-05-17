@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="main-calculator"
+>
+  <div
+    className="section-calculator"
+  >
+    <h1
+      className="ui orange header display-value"
+    >
+      0
+    </h1>
+    <div
+      className="d-grid"
+    >
+      <button
+        className="ui button purple"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="ui button purple"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="ui button purple"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="ui button blue"
+        onClick={[Function]}
+        type="button"
+      >
+        /
+      </button>
+    </div>
+    <div
+      className="d-grid"
+    >
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="ui button blue"
+        onClick={[Function]}
+        type="button"
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="d-grid"
+    >
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="ui button blue"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="d-grid"
+    >
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="ui button blue"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="d-grid-last"
+    >
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="ui button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="ui button blue"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+  <div
+    className="heloo"
+  >
+    <div>
+      <h1>
+        Let's do some maths 
+      </h1>
+    </div>
+    <div>
+      Created by 
+      <a
+        className="ui header teal"
+        href="https://gasb150.me"
+      >
+        Gustavo Sanmartin
+      </a>
+    </div>
+  </div>
+</div>
+`;

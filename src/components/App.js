@@ -1,40 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+const App = () => {
+  const [value, setValue] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+  const handleClick = (buttonName) => {
+    const data = { ...value };
+    const result = calculate(data, buttonName);
+    setValue({ ...result });
+  };
+  const { total, next } = value;
 
-  render() {
-    const handleClick = (buttonName) => {
-      const result = calculate(this.state, buttonName);
-      this.setState({ ...result });
-    };
-    const { next, total } = this.state;
-
-    return (
-      <div className="ui grid container">
-        <div className="sixteen wide mobile eight wide tablet ten wide computer column">
-          <Display result={(next && next.toString()) || (total && total.toString())} />
-          <ButtonPanel clickHandler={(e) => handleClick(e)} />
+  return (
+    <div className="main-calculator">
+      <div className="section-calculator">
+        <Display result={(next && next.toString()) || (total && total.toString())} />
+        <ButtonPanel clickHandler={(data) => handleClick(data)} />
+      </div>
+      <div className="heloo">
+        <div>
+          <h1>{"Let's do some maths "}</h1>
         </div>
-        <footer className="footer container center aligned inverted ui header segment">
+        <div>
           {'Created by '}
           <a href="https://gasb150.me" className="ui header teal">
             Gustavo Sanmartin
           </a>
-        </footer>
+        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
